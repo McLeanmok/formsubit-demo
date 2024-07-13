@@ -1,0 +1,30 @@
+---
+import Container from "../Container.astro";
+import EmailFormImputCopy from "../EmailFormImput.astro";
+import InlineFormImput from "../InlineFormImput.astro";
+import NarrowContainer from "../NarrowContainer.astro";
+---
+
+<form action="">
+    <Container>
+        <div class="flex gp-200 justify-center">
+            <InlineFormImput text="First Name" aria="Enter Your First Name" />
+        <EmailFormImputCopy text="Email Address" aria="Enter Your Email Address" />
+        <input type="submit" value="Submit"  class="btn-primary"/>
+        </div>
+    </Container>
+</form>
+<style>
+    .btn-primary {
+        cursor: pointer;
+        background-color: var(--clr-primary);
+        padding: var(--sp-100) var(--sp-150);
+        color: var(--clr-white);
+        font-family: var(--font-fam-headings);
+        font-weight: 700;
+        border-radius: var(--sp-50);
+    }
+    .btn-primary:hover,.btn-primary:focus {
+        opacity: 80%
+    }
+</style>

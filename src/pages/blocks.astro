@@ -1,0 +1,31 @@
+---
+import Container from "../components/Container.astro";
+import FlexBox from "../components/FlexBox.astro";
+import NarrowContainer from "../components/NarrowContainer.astro";
+import EmailFormImputCopy from "../components/blocks/EmailOptinForm.astro";
+import IconRow from "../components/blocks/IconRow.astro";
+import IconRowColour from "../components/blocks/IconRowColour.astro";
+import IconRowLight from "../components/blocks/IconRowLight.astro";
+import MainTemplate from "../templates/MainTemplate.astro";
+---
+
+<MainTemplate title="Block Sandbox">
+   <section class="p-section m-auto">
+        <Container>
+            <EmailFormImputCopy />
+        </Container>
+   </section>
+   <section class="p-section bg-alt">
+    <Container>
+     <FlexBox>
+        <IconRow />
+        <IconRowColour />
+     </FlexBox>
+    </Container>
+   </section>
+   <section class="p-section bg-tertiary">
+    <NarrowContainer>
+        <IconRowLight />
+    </NarrowContainer>
+   </section>
+</MainTemplate>

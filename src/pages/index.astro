@@ -1,0 +1,32 @@
+---
+import BtnSeccondary from "../components/BtnSeccondary.astro";
+import CardPrimary from "../components/CardPrimary.astro";
+import Container from "../components/Container.astro";
+import Grid3 from "../components/Grid3.astro";
+import MainTemplate from "../templates/MainTemplate.astro";
+---
+
+<MainTemplate title="Home">
+    <section class="p-section bg-primary">
+        <Container>
+            <h1 class="h1 mb-150 txt-center">Welcome to the Core Theme Beta</h1>
+            <p class="p txt-center mb-150">The Core Theme contains all the styling settings that I use on my own website. Each time I add a new style, component, or layout, the core theme will get updated</p>
+            <div class="flex justify-center m-auto mb-250">
+                <BtnSeccondary text="View Components" link="/components" />
+            </div>
+        </Container>
+    </section>
+    <section class="p-section bg-light-orange">
+        <Container>
+            <div class="text flex flex-col gp-150 justify-center m-auto mb-200 txt-center">
+                <h2 class="h2 clr-primary">How to get started</h2>
+                <p class="p clr-primary">Get started using the theme in just 3 steps</p>
+            </div>
+            <Grid3>
+                <CardPrimary title="Build Your Pages" body="The core theme makes it easy to build out pages with utilities, components and blocks."/>
+                <CardPrimary title="Customize" body="It is so easy to customize the core theme. Built on top of CSS varieties, you can easily apply your own design with ease." />
+                <CardPrimary title="Deploy" body="Once your site is built, you are able to deploy it with ease."
+            <Grid3 />
+        </Container>
+    </section>
+</MainTemplate>

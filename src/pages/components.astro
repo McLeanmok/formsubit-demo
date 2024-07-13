@@ -1,0 +1,82 @@
+---
+import BlockImput from "../components/BlockImput.astro";
+import BtnPrimary from "../components/BtnPrimary.astro";
+import BtnSeccondary from "../components/BtnSeccondary.astro";
+import CardPrimary from "../components/CardPrimary.astro";
+import CardSeccondary from "../components/CardSeccondary.astro"
+import CardTertiary from "../components/CardTertiary.astro";
+import Container from "../components/Container.astro";
+import FlexBox from "../components/FlexBox.astro";
+import Grid2 from "../components/Grid2.astro";
+import Grid3 from "../components/Grid3.astro";
+import InlineFormImput from "../components/InlineFormImput.astro";
+import MainTemplate from "../templates/MainTemplate.astro";
+---
+
+<MainTemplate title="Component Sandbox">
+    <section class="bg-seccondary p-section txt-center">
+        <Container>
+            <h1 class="h1">Components</h1>
+        </Container>
+    </section>
+    <section class="p-section bg-alt">
+        <Container>
+            <div class="txt-center">
+                <h1 class="h1 mb-150">Layout Tools</h1>
+            </div>
+            <FlexBox class="gp-500">
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, pariatur ratione debitis amet atque distinctio consectetur, ducimus inventore dignissimos quam cupiditate exercitationem error beatae illum quisquam perferendis dicta eligendi reiciendis.</p>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, pariatur ratione debitis amet atque distinctio consectetur, ducimus inventore dignissimos quam cupiditate exercitationem error beatae illum quisquam perferendis dicta eligendi reiciendis.</p>
+            </FlexBox>
+            <div class="mt-200">
+                <Grid2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eligendi? Fuga corporis ut aliquam. Ex natus molestias libero odio, tempora repellat quod corporis temporibus, autem ea dolorum eveniet sit provident!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eligendi? Fuga corporis ut aliquam. Ex natus molestias libero odio, tempora repellat quod corporis temporibus, autem ea dolorum eveniet sit provident!</p>
+                    
+                </Grid2>
+            </div>
+            <div class="mt-200">
+                <Grid3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eligendi? Fuga corporis ut aliquam. Ex natus molestias libero odio, tempora repellat quod corporis temporibus, autem ea dolorum eveniet sit provident!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eligendi? Fuga corporis ut aliquam. Ex natus molestias libero odio, tempora repellat quod corporis temporibus, autem ea dolorum eveniet sit provident!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eligendi? Fuga corporis ut aliquam. Ex natus molestias libero odio, tempora repellat quod corporis temporibus, autem ea dolorum eveniet sit provident!</p>
+                    
+                </Grid3>
+            </div>
+        </Container>
+    </section>
+    <!-- Buttons -->
+     <section class="bg-accent p-section-sm">
+        <Container>
+            <h2 class="j2 mb-200">Buttons</h2>
+            <FlexBox>
+                <BtnPrimary text="Click Me" link="#" />
+                <BtnSeccondary text="Click Me" link="#" />
+            </FlexBox>
+        </Container>
+     </section>
+     <!-- Cards -->
+      <section class="p-section bg-white">
+        <Container>
+            <h2 class="h2 clr-tertiary mb-150">Cards</h2>
+            <FlexBox>
+                <CardPrimary />
+                <CardSeccondary />
+                <CardTertiary />
+            </FlexBox>
+        </Container>
+      </section>
+      <section class="p-section bg-accent txt-center">
+        <Container>
+            <div class="mb-150">
+                <h2 class="h2">Forms</h2>
+            </div>
+            
+              <form action="" class="flex justify-center gp-200">
+                <InlineFormImput text="First Name" aria="First Name" />
+                <BlockImput text="Message" aria="Enter Your Message" />
+              </form>
+            
+        </Container>
+      </section>
+</MainTemplate>
